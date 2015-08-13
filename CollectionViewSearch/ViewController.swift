@@ -6,10 +6,23 @@ class ViewController: UIViewController, UICollectionViewDataSource
         .componentsSeparatedByString(" ")
 
     @IBOutlet var collectionView: UICollectionView!
+    @IBOutlet var searchBarContainerView: UIView?
+
+    lazy var searchController: UISearchController = {
+        let searchController = UISearchController(searchResultsController: nil)
+        searchController.hidesNavigationBarDuringPresentation = true
+        searchController.dimsBackgroundDuringPresentation = false
+        
+        return searchController
+    }()
 
     override func viewDidLoad()
     {
         super.viewDidLoad()
+
+        searchController.searchBar.autoresizingMask = [UIViewAutoresizing.FlexibleWidth, UIViewAutoresizing.FlexibleHeight]
+        searchBarContainerView?.addSubview(searchController.searchBar)
+        searchController.searchBar.sizeToFit()
     }
     
     //MARK: UICollectionViewDataSource
