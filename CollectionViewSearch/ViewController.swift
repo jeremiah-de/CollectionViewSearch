@@ -12,6 +12,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UISearchResu
     lazy var searchController: UISearchController = {
         let searchController = UISearchController(searchResultsController: nil)
         searchController.searchResultsUpdater = self
+
         searchController.hidesNavigationBarDuringPresentation = true
         searchController.dimsBackgroundDuringPresentation = false
         
