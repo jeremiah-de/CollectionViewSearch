@@ -43,7 +43,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LabelCell" id="7R8-GS-gpP" customClass="LabelCollectionViewCell" customModule="CollectionViewSearch" customModuleProvider="target">
-                                        <rect key="frame" x="10" y="74" width="90" height="44"/>
+                                        <rect key="frame" x="10" y="10" width="90" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="90" height="44"/>
