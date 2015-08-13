@@ -8,6 +8,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UISearchResu
 
     @IBOutlet var collectionView: UICollectionView!
     @IBOutlet var searchBarContainerView: UIView!
+    @IBOutlet var emptyResultsView: UIView?
 
     lazy var searchController: UISearchController = {
         let searchController = UISearchController(searchResultsController: nil)
@@ -33,9 +34,16 @@ class ViewController: UIViewController, UICollectionViewDataSource, UISearchResu
     func updateSearchResultsForSearchController(searchController: UISearchController)
     {
         filterData()
+        handleEmptyResults()
         collectionView?.reloadData()
     }
     
+    func handleEmptyResults()
+    {
+        let showEmptyResultsView = searchController.active && filteredData.count == 0
+        emptyResultsView?.hidden = !showEmptyResultsView
+    }
+
     func filterData()
     {
         filteredData = data.filter({ (string) -> Bool in

@@ -80,22 +80,43 @@
                                     <constraint firstAttribute="height" constant="44" id="9QI-sl-99s"/>
                                 </constraints>
                             </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e0v-m4-fYm">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Search Results" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f9w-vB-w6y">
+                                        <rect key="frame" x="230" y="258" width="140" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="f9w-vB-w6y" firstAttribute="centerX" secondItem="e0v-m4-fYm" secondAttribute="centerX" id="cWT-nZ-ltJ"/>
+                                    <constraint firstItem="f9w-vB-w6y" firstAttribute="centerY" secondItem="e0v-m4-fYm" secondAttribute="centerY" id="iVP-td-Gd1"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="zRl-da-HFG" firstAttribute="leading" secondItem="OmC-pS-P7q" secondAttribute="leading" id="4El-cg-CrY"/>
+                            <constraint firstItem="e0v-m4-fYm" firstAttribute="top" secondItem="vSQ-HA-HdY" secondAttribute="bottom" id="7Oh-6t-HwK"/>
                             <constraint firstItem="zRl-da-HFG" firstAttribute="top" secondItem="vSQ-HA-HdY" secondAttribute="bottom" id="Ejv-E1-73x"/>
                             <constraint firstAttribute="trailing" secondItem="zRl-da-HFG" secondAttribute="trailing" id="FTC-uC-NIo"/>
                             <constraint firstItem="Frg-VF-Gbh" firstAttribute="top" secondItem="pFY-VI-Npv" secondAttribute="bottom" id="OvC-QL-0OC"/>
                             <constraint firstItem="pFY-VI-Npv" firstAttribute="leading" secondItem="OmC-pS-P7q" secondAttribute="leading" id="SKZ-io-gT3"/>
+                            <constraint firstAttribute="trailing" secondItem="e0v-m4-fYm" secondAttribute="trailing" id="ZSN-xA-FhM"/>
                             <constraint firstItem="pFY-VI-Npv" firstAttribute="top" secondItem="zRl-da-HFG" secondAttribute="bottom" id="acf-1f-Z35"/>
+                            <constraint firstItem="e0v-m4-fYm" firstAttribute="leading" secondItem="OmC-pS-P7q" secondAttribute="leading" id="jUN-yX-rPn"/>
                             <constraint firstAttribute="trailing" secondItem="pFY-VI-Npv" secondAttribute="trailing" id="ne6-uV-yJP"/>
+                            <constraint firstItem="Frg-VF-Gbh" firstAttribute="top" secondItem="e0v-m4-fYm" secondAttribute="bottom" id="pqo-Sy-ZwO"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" title="Words" id="ykG-Kq-tei"/>
                     <connections>
                         <outlet property="collectionView" destination="pFY-VI-Npv" id="Xze-AG-TIW"/>
+                        <outlet property="emptyResultsView" destination="e0v-m4-fYm" id="k3E-KM-MuI"/>
                         <outlet property="searchBarContainerView" destination="zRl-da-HFG" id="vBS-Xt-vRe"/>
                     </connections>
                 </viewController>
