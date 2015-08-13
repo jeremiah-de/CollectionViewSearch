@@ -77,7 +77,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="9QI-sl-99s"/>
+                                    <constraint firstAttribute="height" priority="250" constant="44" id="9QI-sl-99s"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="wQa-rS-Uhx"/>
                                 </constraints>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e0v-m4-fYm">
