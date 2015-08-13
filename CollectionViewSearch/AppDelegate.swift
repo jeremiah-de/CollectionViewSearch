@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  CollectionViewSearch
-//
-//  Created by Jeremiah Gage on 8/12/15.
-//  Copyright © 2015 Jeremiah Gage. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
