@@ -7,7 +7,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UISearchResu
     var filteredData = [String]()
 
     @IBOutlet var collectionView: UICollectionView!
-    @IBOutlet var searchBarContainerView: UIView?
+    @IBOutlet var searchBarContainerView: UIView!
 
     lazy var searchController: UISearchController = {
         let searchController = UISearchController(searchResultsController: nil)
@@ -23,7 +23,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UISearchResu
         super.viewDidLoad()
 
         searchController.searchBar.autoresizingMask = [UIViewAutoresizing.FlexibleWidth, UIViewAutoresizing.FlexibleHeight]
-        searchBarContainerView?.addSubview(searchController.searchBar)
+        searchBarContainerView.addSubview(searchController.searchBar)
         searchController.searchBar.sizeToFit()
     }
     
