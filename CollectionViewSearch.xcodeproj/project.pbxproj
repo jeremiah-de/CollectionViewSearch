@@ -13,6 +13,7 @@
 		279E2CD21B7C2DC30043C429 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 279E2CD11B7C2DC30043C429 /* Assets.xcassets */; };
 		279E2CD51B7C2DC30043C429 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 279E2CD31B7C2DC30043C429 /* LaunchScreen.storyboard */; };
 		279E2CDD1B7C305F0043C429 /* LabelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279E2CDC1B7C305F0043C429 /* LabelCollectionViewCell.swift */; };
+		27EB33CB1B82262A00838C60 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EB33CA1B82262A00838C60 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		279E2CD41B7C2DC30043C429 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		279E2CD61B7C2DC30043C429 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		279E2CDC1B7C305F0043C429 /* LabelCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelCollectionViewCell.swift; sourceTree = "<group>"; };
+		27EB33CA1B82262A00838C60 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				279E2CCA1B7C2DC30043C429 /* AppDelegate.swift */,
 				279E2CCC1B7C2DC30043C429 /* ViewController.swift */,
 				279E2CDC1B7C305F0043C429 /* LabelCollectionViewCell.swift */,
+				27EB33CA1B82262A00838C60 /* DetailViewController.swift */,
 				279E2CCE1B7C2DC30043C429 /* Main.storyboard */,
 				279E2CD11B7C2DC30043C429 /* Assets.xcassets */,
 				279E2CD31B7C2DC30043C429 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 				279E2CDD1B7C305F0043C429 /* LabelCollectionViewCell.swift in Sources */,
 				279E2CCD1B7C2DC30043C429 /* ViewController.swift in Sources */,
 				279E2CCB1B7C2DC30043C429 /* AppDelegate.swift in Sources */,
+				27EB33CB1B82262A00838C60 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
