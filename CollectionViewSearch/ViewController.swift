@@ -32,7 +32,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UISearchResu
     func updateSearchResultsForSearchController(searchController: UISearchController)
     {
         filterData()
-        collectionView?.reloadData()
+        collectionView.reloadData()
     }
     
     func filterData()
