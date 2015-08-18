@@ -23,6 +23,8 @@ class ViewController: UIViewController, UICollectionViewDataSource
         searchController.searchBar.autoresizingMask = [UIViewAutoresizing.FlexibleWidth, UIViewAutoresizing.FlexibleHeight]
         searchBarContainerView?.addSubview(searchController.searchBar)
         searchController.searchBar.sizeToFit()
+        
+        definesPresentationContext = true
     }
     
     //MARK: UICollectionViewDataSource
