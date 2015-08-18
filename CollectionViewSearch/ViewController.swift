@@ -95,7 +95,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UISearchResu
     {
         filterData()
         handleEmptyResults()
-        collectionView?.reloadData()
+        collectionView.reloadData()
     }
 
     //MARK: UICollectionViewDataSource
